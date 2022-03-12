@@ -9,8 +9,6 @@ console.log(otherRandomCar)
 //Answer:Both randomCar & otherRandomCar will console.log one of the cars in the const randomly.
 
 
-
-
 //Problem Two
 const employee = {
   name: 'Elon',
