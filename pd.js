@@ -1,14 +1,12 @@
 //Problem One
-const employee = {
-  name: 'Elon',
-  age: 47,
-  company: 'Tesla'
-}
-const { name: otherName } = employee;
+const cars = ['Tesla', 'Mercedes', 'Honda']
+const [ randomCar ] = cars
+const [ ,otherRandomCar ] = cars
 //Predict the output
-console.log(name);
-console.log(otherName);
-//Answer: 
+console.log(randomCar)
+console.log(otherRandomCar)
+
+//Answer:Both randomCar & otherRandomCar will console.log one of the cars in the const randomly.
 
 
 
@@ -24,7 +22,7 @@ const { name: otherName } = employee;
 console.log(name);
 console.log(otherName);
 
-//Answer: 
+//Answer:name is not defined so it will cause a error but employee is defined and will display the name, age, and company. Then otherName will pass Elon.
 
 
 //Problem Three
@@ -39,7 +37,7 @@ const { password: hashedPassword } = person;
 console.log(password);
 console.log(hashedPassword);
 
-//Answer: 
+//Answer:I believe console.log password will show 12345 but hashedPassword will show undefined.
 
 //Problem Four
 const numbers = [8, 2, 3, 5, 6, 1, 67, 12, 2];
@@ -50,7 +48,7 @@ const [,,,,,,,,third] = numbers;
 console.log(first == second);
 console.log(first == third);
 
-//Answer: 
+//Answer:I believe the output will be false and true because first = 2, second = 5, and third = 2.
 
 
 //Problem Five
@@ -67,4 +65,4 @@ console.log(secondKey);
 console.log(secondKey[0]);
 console.log(willThisWork);
 
-//Answer: 
+//Answer:The output will be value,[1, 5, 1, 8, 3, 3], 1, and 5. The [0] means you want will get the first number from the second key and the "," before willThisWork moves you to the second number.
